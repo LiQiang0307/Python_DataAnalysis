@@ -1,0 +1,71 @@
+body{font-family: '微软雅黑';}
+ul{padding:0px; margin:0px;}
+li{list-style-type: none;}
+/*首页*/
+.index-nav{ height:92px; width:1080px; margin:0 auto;}
+.index-logo{ float:left; width:216px; height:92px; }
+.index-navtxt{ float:left;}
+.index-navtxt li{ float:left; padding-left:25px; }
+.index-navtxt li a{ display: inline-block; text-decoration: none; font-weight: 600; font-size: 18px; margin-top:24px; padding:10px 10px; color:#1a1a1a;}
+.index-navtxt li a span{ color:#666; font-size: 16px;}
+.index-navtxt li a:hover{ border-bottom:1px solid #00c0ff; }
+.index-login{ float:right; }
+.index-login li{ float:left; padding-right:10px; line-height: 92px; font-size: 16px; }
+.index-login li a{ text-decoration: none; color:#666666; }
+.recommend-meet{ float:left;width:1080px; margin:0 auto; }
+.recommend-til{ padding-left:100px; padding-bottom:30px; font-size: 22px; color:#000000; }
+.recommend-til span{ padding-left:15px; font-size: 16px; color:#999999; }
+.recommend-cont{float:left;width:100%; height:100%;}
+.recommend-cont ul li{ float:left; padding-left:10px;}
+.recommend-box{ width:262px;  position:relative; height:330px;}
+.recommend-meetads{margin-bottom:5px; width:100%;  line-height:20px; color:#404040; }
+.recommend-meetads span{font-size: 14px; font-size: 12px; padding-left:5px; }
+.recommend-btn{margin:10px 0px 1px 81px; width:100px; height:30px; font-size:16px; background-color: #00c0ff; border:0px; color:#fff; text-align: center; }
+.recommend-next{ width:100%; background-color:#ccc; }
+.recommend-next ul{ float:right; }
+.recommend-next ul li{ float:left; padding-right:5px; }
+.recommend-next ul li div{ width:30px; height:30px; text-align: center; line-height: 30px; background-color:#b2b2b2; }
+.recommend-next ul li div i{ color:#ffffff; }
+.suspend-img{ position: absolute;width: 240px;height: 160px;margin-top: 10px;top: 0px;margin-left: 10px; line-height: 160px; text-align: center; color:#ffffff;font-size: 16px; font-weight: 600; background-image: url(../image/img_hed.png); }
+.suspend-txt{ position: absolute;margin-top:-30px;width:100%; height:30px; line-height: 30px; text-align: center; font-size: 16px; font-weight: 600;color:#ffffff; background-color:#82add5; opacity: 0.7; }
+.news-contant{ float:left; padding:60px 35px 0px 35px;width:359px; height:250px; border-left:1px solid #e5e5e5;}
+.more-btn{ margin:0 auto; margin-top:30px; width:130px; height:30px; cursor: pointer; text-align: center; line-height:30px; background-color:#1196ff; }
+.hostory-meet{ margin:30px 0px; width:100%; height:300px;}
+.hostory-meet ul li{ float:left; }
+.hostory-meet ul li:nth-child(1){ width:340px; height:300px; background-color:#dcdcdc; }
+.hostory-meet ul li:nth-child(2){ width:400px; height:300px;  }
+.hostory-meet ul li:nth-child(3){ width:340px; height:300px; background-color:#dcdcdc; }
+.hostory-txt{ margin:90px 20px 0px 90px; padding-left:20px; border-left:1px solid #b2b2b2; }
+.hostory-mets{ margin:0px 0px 30px 0px; width:100%; height:300px; }
+.hostory-mets ul li{ float:left; }
+.hostory-mets ul li:nth-child(1){ width:300px; height:300px;}
+.hostory-mets ul li:nth-child(2){ width:780px; height:300px;}
+.hostory-txts{ margin:20px 12px 0px 20px; }
+.hostory-txts hr{margin:0px; margin-bottom:20px;width:80px; height:1px; border:0px; border-top:1px solid #999;}
+.index-foot{float:left; width:100%; height:400px; background-image: url(../image/foot.png); }
+.index-footl{float:left; margin-top:70px; }
+.index-footl ul li{ line-height: 25px; color:#ffffff; font-size: 14px; }
+.index-footl ul li span{ font-size: 20px; }
+.index-footr{float:right; padding:30px 0px 0px 80px; margin-right:50px; margin-top:70px; width:400px; height:200px; background-color:#ffffff; }
+.index-footr p{ font-size: 18px; }
+.index-footr input{position: relative; width:280px; height:40px; line-height: 40px; font-size: 16px; padding-left:5px; color:#999; border:0px; border:1px solid #999; }
+.search-icon{ position: absolute;margin-top: 12px;margin-left: -25px; color:#999; }
+.index-foottxt{width: 100%;float: left;margin-top:50px;text-align: center;color: #fff;}
+/*登录后首页*/
+.logo{width:1080px; margin:0 auto; height:100px; line-height: 100px;}
+.logo ul li{ float:left; }
+.logo-ser{ position: absolute; margin-left:-25px; margin-top:42px; color:#999;}
+.logo ul li input{ height:40px; width:250px; font-size: 16px; padding-left: 5px; border:0px; border:1px solid #999; }
+.logo ul li button{ height:38px; width:100px; color:#fff; font-size: 16px; line-height: 38px; text-align: center; border:0px; background-color:#00c0ff;  }
+.logo-own li{ font-size: 16px; padding-right: 15px; }
+.logo-own li i{ color: #66d9ff; font-size: 18px; padding-right:5px; }
+/*创建会议*/
+.set-nav li{ float:left; }
+.set-til{ position: absolute;margin-left:-10px; margin-top:10px;letter-spacing:2px;width:1090px; height:61px; padding-left:40px; line-height: 61px; font-size: 17px; color:#fff;  background-image: url(../image/set-til.png); }
+.conference-cont{float:left;width:100%; position: relative; background-color:#fff; box-shadow: 0px 0px 2px #999;}
+.conference-tab{ margin-top:80px;margin-bottom:30px; letter-spacing:2px; }
+.conference-tab tr td:nth-child(1){ padding-right:5px; text-align:right;}
+.conference-tab tr td span{ color:#86201e; display: inline-block; width:10px; }
+.conference-tab tr td p{ padding-left:15px;color:#999; font-size: 12px;}
+.conference-tab tr td input{ width:350px; height:30px; margin:5px 0px; border:0px; border:1px solid #999; }
+.conference-tab tr td textarea{ margin:5px 0px 5px 15px;width:90%; height:150px; border:0px; border:1px solid #999; }
