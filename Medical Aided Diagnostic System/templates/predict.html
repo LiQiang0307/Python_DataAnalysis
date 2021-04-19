@@ -9,17 +9,35 @@
         h1{
             text-align: center;
         }
+		body{
+		  
+		  margin:0px;
+		  background: url('../static/img/6.png') no-repeat;
+		  background-size:100% 100%;
+		  background-attachment:fixed;
+		}
+		.form-control{
+			background-color: transparent;
+			text-align: center;
+		}
+		#a1{
+			margin:0px auto;
+			margin-left: 250px;
+		}
+
+		        </style>
 
     </style>
     <script src="../static/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body background="../static/img/6.png">
 <h1 class="align-content-center">预测心脏病</h1>
-<form action="/getData">
-    <div class="row">
+<form action="/getData" >
+	<div id="a1">
+    <div class="row" >
         <div class="col-md-6 col-lg-6">
-            <div class="col-sm-6">
+            <div class="col-sm-6" >
                 年龄：<input type="text" name="age" id="age" class="form-control" placeholder="" required>
             </div>
         </div>
@@ -126,7 +144,7 @@
     </div>
     <br>
 
-
+	</div>
 </form>
 <script>
     function addData(){

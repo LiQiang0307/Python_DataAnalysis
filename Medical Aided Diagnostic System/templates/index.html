@@ -1,3 +1,10 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: LiQiang
+ * @Date: 2021-04-19 18:00:19
+ * @LastEditTime: 2021-04-19 18:22:26
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +13,21 @@
     <style>
         #testContainer {
             text-align: center;
-            position: absolute;
-            margin-top: 160px;
-            align-content: center;
-            {#margin-left: auto;#}
-            {#margin: auto;#}
+            /* position: absolute; */
+            margin-top: 80px;
+            align-content: center;	
+            /* {#margin-left: auto;#}
+            {#margin: auto;#} */
         }
 
         #testContainer > div {
             display: inline-block;
-            margin:47px;
+            margin:10px;
         }
 
         #testContainer img {
-            width: 200px;
-            height: 300px;
+            width: 450px;
+            height: 400px;
         }
         h1{
             font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
@@ -29,25 +36,50 @@
             text-align: center;
         }
         body{
-            background-color: #53E3A6;
+            width: 100%;
+            height: 100%;
+            overflow-x:hidden;
+            overflow-y:hidden;
+            /* background-color: #53E3A6; */
+			/* background-image:url('../static/img/2.png');
+			background-size:80px 60px; */
+		  /*  background-repeat:no-repeat; */
+		  margin:0px;
+		  background: url('../static/img/2.png') no-repeat;
+		  background-size:100% 100%;
+		  background-attachment:fixed;
         }
         img:hover{
-		cursor:pointer;
+		cursor:pointer;	
 		/* transform属性 */
-		transform:translate(0,-20px)
+		transform:translate(0,-10px)
 		/* 第一个参数指定X轴的位移量,必填, 第二个参数指定Y轴的位移量,不必填 默认0*/
 	}
+		p{
+			font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+			color:white;
+            font-size: 24px;	
+		}
     </style>
 </head>
 <body>
+	
+	
 <h1>医疗辅助诊断系统</h1>
 
+
+</div>
 <div id="testContainer">
-    <div onclick="window.open('http://127.0.0.1:5000/getPredict')"><img src="../static/img/1.png"></div>
-    <div onclick="window.open('http://127.0.0.1:5000/visual')"><img src="../static/img/1.png"></div>
-    <div><img src="../static/img/1.png"></div>
-    <div><img src="../static/img/1.png"></div>
-    <div><img src="../static/img/1.png"></div>
+	<!-- Predict -->
+	<div ><p>心脏病预测</p>
+    <div onclick="window.open('http://127.0.0.1:5000/getPredict')">
+		
+		<img src="../static/img/3.jpg"></div>
+		</div>
+	<!-- visual -->
+	<div><p>可视化结果</p>
+    <div onclick="window.open('http://127.0.0.1:5000/visual')"><img src="../static/img/4.jpg"></div>
+	</div>
 </div>
 
 
