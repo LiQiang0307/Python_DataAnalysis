@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>预测</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+		body{
+		  
+		  margin:0px;
+		  background: url('../static/img/t.jpg') no-repeat;
+		  background-size:100% 100%;
+		  background-attachment:fixed;
+		}
+		.form-control{
+			background-color: transparent;
+			text-align: center;
+		}
+		#a1{
+			margin:0px auto;
+			margin-left: 250px;
+		}
+
+		        </style>
+
+    </style>
+    <script src="../static/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+</head>
+<body background="../static/img/t.jpg">
+<h1 class="align-content-center">预测糖尿病</h1>
+<form action="/getDataT" >
+	<div id="a1">
+    <div class="row" >
+        <div class="col-md-6 col-lg-6">
+            <div class="col-sm-6" >
+                <!-- 年龄：<input type="text" name="age" id="age" class="form-control" placeholder="" required> -->
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            性别：
+            <div class="col-sm-6">
+                <label class="radio-inline">
+                    <input type="radio" value="男" name="sex" checked="">男</label>
+                <label class="radio-inline">
+                    <input type="radio" name="sex" value="女">女</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">怀孕次数 Pregnancies：</label>
+            <div class="col-sm-6">
+                <input type="text" id="Pregnancies" class="form-control" name="Pregnancies" placeholder="" required>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">血糖 Glucose：</label>
+            <div class="col-sm-6">
+                <input type="text" id="Glucose" class="form-control" name="Glucose" placeholder="单位mmol/L" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">血压 BloodPressure：</label>
+            <div class="col-sm-6">
+                <input type="text" id="BloodPressure" class="form-control" name="BloodPressure" placeholder="单位mmHg" required>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">皮质厚度 SkinThickness：</label>
+            <div class="col-sm-6">
+                <input type="text" id="SkinThickness" class="form-control" name="SkinThickness"  required>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">胰岛素 Insulin：</label>
+            <div class="col-sm-6">
+                <input type="text" id="Insulin" name="Insulin" class="form-control" placeholder="" required>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">BMI身体质量指数 BMI：</label>
+            <div class="col-sm-6">
+                <input type="text" name="BMI" id="BMI" class="form-control" placeholder="" required>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">糖尿病遗传函数 DiabetesPedigreeFunction：</label>
+            <div class="col-sm-6">
+                <input type="text" name="DiabetesPedigreeFunction" id="DiabetesPedigreeFunction" class="form-control" placeholder="" required>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">年龄 age：</label>
+            <div class="col-sm-6">
+                <input type="text" name="Age" id="age" class="form-control" placeholder="" required>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">最大运动量时心电图ST斜率：</label>
+            <div class="col-sm-6">
+                <input type="text" name="slope" id="slope" class="form-control" placeholder="" required>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <label class="col-sm-6 control-label">荧光染色法测定的主血管数：</label>
+            <div class="col-sm-6">
+                <input type="text" name="ca" id="ca" class="form-control" placeholder="" required>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            
+        </div>
+        <div class="col-md-6 col-lg-6">
+             <br>
+            <button onclick="addData()" type="button" class="btn btn-outline-success">快速填充样例</button>
+            <button type="submit" class="btn btn-outline-primary center-block">立即预测</button>
+            <button type="reset" class="btn btn-outline-warning center-block">重置</button>
+        </div>
+    </div>
+    <br>
+
+	</div>
+</form>
+<script>
+<!--Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age-->
+<!--6,148,72,35,0,33.6,0.627,50-->
+    function addData(){
+        $('#Pregnancies').val('6');
+        $('#Glucose').val('148');
+        $('#BloodPressure').val('72');
+        $('#SkinThickness').val('35');
+        $('#Insulin').val('0');
+        $('#BMI').val('33.6');
+        $('#DiabetesPedigreeFunction').val('0.627');
+        $('#age').val('50');
+    }
+</script>
+
+</body>
+</html>
