@@ -17,16 +17,16 @@
 - scikit_learn==0.24.1
 
 
-![index](.\assets\index.png)
+![index](./assets/index.png)
 
-![index](.\assets\main.png)
+![index](./assets/main.png)
 
-![index](.\assets\糖尿病.png)
+![index](./assets/糖尿病.png)
 
-![index](.\assets\心脏病.png)
+![index](./assets/心脏病.png)
 
-![index](.\assets\肿瘤.png)
+![index](./assets/肿瘤.png)
 
-![index](.\assets\数据可视化.png)
+![index](./assets/数据可视化.png)
 
 
