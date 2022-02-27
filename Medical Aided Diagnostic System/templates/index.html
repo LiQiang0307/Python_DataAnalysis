@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        #testContainer {
+            text-align: center;
+            position: absolute;
+            margin-top: 160px;
+            align-content: center;
+            {#margin-left: auto;#}
+            {#margin: auto;#}
+        }
+
+        #testContainer > div {
+            display: inline-block;
+            margin:47px;
+        }
+
+        #testContainer img {
+            width: 200px;
+            height: 300px;
+        }
+        h1{
+            font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+        body{
+            background-color: #53E3A6;
+        }
+        img:hover{
+		cursor:pointer;
+		/* transform属性 */
+		transform:translate(0,-20px)
+		/* 第一个参数指定X轴的位移量,必填, 第二个参数指定Y轴的位移量,不必填 默认0*/
+	}
+    </style>
+</head>
+<body>
+<h1>医疗辅助诊断系统</h1>
+
+<div id="testContainer">
+    <div onclick="window.open('http://127.0.0.1:5000/getPredict')"><img src="../static/img/1.png"></div>
+    <div onclick="window.open('http://127.0.0.1:5000/visual')"><img src="../static/img/1.png"></div>
+    <div><img src="../static/img/1.png"></div>
+    <div><img src="../static/img/1.png"></div>
+    <div><img src="../static/img/1.png"></div>
+</div>
+
+
+</body>
+</html>
